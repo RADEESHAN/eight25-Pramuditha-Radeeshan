@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff;
+    color: #111;
+  }
+  
+  /* === Logos Section === */
+  .logos-section {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+  }
+  .logos-container {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    height: 500px;
+  }
+  .logo-card {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  }
+  .logo-img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .blackberry { top: 80px; left: 20%; }
+  .microsoft { top: 40%; left:10%; }
+  .aws { bottom: 15%; left: 19%; }
+  .catlogo { bottom: 15%; left: 1%; }
+  .black { bottom: -9%; left: 10%; }
+  .bluecolor { top: 80px; right: 10%; }
+  .one { top: 40%; right: 20%; }
+  .searchbar { bottom: 15%; right:0%; }
+  .cisco { bottom: 15%; right: 10%; }
+  .snowflake { bottom: -9%; right: 0%; }
+  
+  .center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 500px;
+    z-index: 1;
+  }
+  .main-heading {
+    font-size: 42px;
+    font-weight: 800;
+    color: #0a1033;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+  .sub-heading {
+    font-size: 18px;
+    color: #64748b;
+    margin-bottom: 30px;
+  }
+  .cta-button {
+    background-color: #ff3b7f;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .cta-button:hover {
+    background-color: #e12e6c;
+  }
+  
+  /* === Hero Section === */
+  .hero-section {
+    background: linear-gradient(120deg, #8b2fb3 0%, #4b32b4 100%);
+    color: white;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 523px;
+    width: 1,440px;
+    overflow: hidden;
+    position: relative;
+  }
+  .hero-content {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .hero-text {
+    max-width: 600px;
+    flex: 1;
+    z-index: 2;
+  }
+  .hero-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+  .hero-btn {
+    padding: 12px 24px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  }
+  .hero-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+  }
+  .hero-image img {
+    max-width: 450px;
+    width: 100%;
+  }
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    z-index: 1;
+  }
+  
+  /* === Testimonial Section === */
+  .testimonial-section {
+    background: linear-gradient(to bottom right, #c5dbff, #ffffff);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    height: 528px;
+  }
+  .testimonial-content {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .testimonial-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 250px;
+  }
+  .testimonial-card img {
+    width: 160px;
+    height: 137px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 56px;
+}
+  .rating {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  .testimonial-text {
+    max-width: 600px;
+  }
+  .testimonial-text h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0d0d2b;
+    margin-bottom: 10px;
+  }
+  .testimonial-text p {
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  /* === CTA Section === */
+  .cta-section {
+    background: linear-gradient(180deg, rgba(130, 137, 255, 0.8) 0%, rgba(18, 30, 115, 1) 100%);
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cta-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('assets/images/grid-pattern.png') center/cover;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+  
+  .cta-section h2 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .cta-button {
+    background-color: #ff3b7f;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cta-button:hover {
+    background-color: #e12e6c;
+  }
+  
+  /* === Footer === */
+  .footer {
+    background-color: #231212;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .footer-links a {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+  .logos-section {
+    z-index: 1;
+    position: relative;
+  }
+  .hero-section,
+  .testimonial-section,
+  .cta-section {
+    position: relative;
+    z-index: 2;
+  }
+  .space-section {
+    width: 100%; /* Fill (1,440px) */
+    height: 200px; /* Hug (200px) */
+    background-color: #f8f9fa; /* Light gray background, you can change this */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .space-section2{
+    width: 100%; /* Fill (1,440px) */
+    height: 200px; /* Hug (200px) */
+    background-color: #c5dbff; /* Light gray background, you can change this */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  
