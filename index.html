@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
+<head>  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Internship Assessment</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Eight25 Internship Assessment - A responsive landing page implementation based on Figma design">
 </head>
 <body>
-
-
-  <section class="space-section">
-    <!-- You can add content here if needed -->
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/images/2.png" alt="Eight25 Logo" />
+      </div>      <nav class="nav-menu">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+      <div class="nav-buttons">
+        <a href="#" class="login-btn">Log in</a>
+        <a href="#" class="signup-btn">Sign up</a>
+      </div>
+      <div class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <section class="space-section header-space">
+    <!-- This section provides spacing for the fixed header -->
   </section>
-
   <!-- Logos Section -->
-  <section class="logos-section">
+  <section id="solutions" class="logos-section">
     <div class="logos-container">
       <!-- Logo cards -->
       <div class="logo-card blackberry"><img src="assets/images/blackberrylogo.png" alt="Blackberry" class="logo-img" /></div>
@@ -32,7 +56,7 @@
       <div class="center-content">
         <h1 class="main-heading">Ideas Galore for<br />Your Creative<br />Team</h1>
         <p class="sub-heading">Leverage our curated tools or build custom integrations</p>
-        <a href="#" class="cta-button">Discover Success Stories <span class="arrow-icon">›</span></a>
+        <a href="#" class="cta-button">Discover Success Stories <span class="arrow-icon">→</span></a>
       </div>
     </div>
   </section>
@@ -41,13 +65,12 @@
     
   </section>
 
-
   <!-- Hero Section -->
-  <section class="hero-section fade-target">
+  <section id="products" class="hero-section fade-target">
     <div class="hero-content">
       <div class="hero-text">
         <h2>AI Automation:<br />Elevating Team Efficiency and Scalability</h2>
-        <a href="#" class="hero-btn">Get Your Free Guide <span class="arrow"></span></a>
+        <a href="#" class="hero-btn">Get Your Free Guide <span class="arrow-icon">→</span></a>
       </div>
       <div class="hero-image">
         <img src="assets/images/ipad.png" alt="AI Automation Guide" />
@@ -58,9 +81,8 @@
   <section class="space-section2">
    
   </section>
-
   <!-- Testimonial -->
-  <section class="testimonial-section fade-target">
+  <section id="resources" class="testimonial-section fade-target">
     <div class="testimonial-content">
       <div class="testimonial-card">
         <img src="assets/images/customer.png" alt="Customer Avatar" />
@@ -74,19 +96,33 @@
   </section>
   <section class="space-section">
    
+  </section>  <!-- CTA -->
+  <section id="pricing" class="cta-section">
+    <div class="cta-content">
+      <h2>Eager to Begin <br />Your Journey?</h2>
+      <p class="cta-text">Take the first step towards enhancing your team's productivity</p>
+      <a href="#" class="cta-button">Let's Connect <span class="arrow-icon">→</span></a>
+    </div>
+    <div class="cta-dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
   </section>
-  <!-- CTA -->
-  <section class="cta-section">
-    <h2>Eager to Begin <br />Your Journey?</h2>
-    <a href="#" class="cta-button">Let's Connect</a>
-  </section>
-
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-links">
       <a href="#">About</a>
       <a href="#">Blog</a>
       <a href="#">Contact</a>
+      <a href="#">Careers</a>
+      <a href="#">Support</a>
+    </div>
+    <div class="social-icons">
+      <a href="#" class="social-icon" aria-label="Twitter"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 5.80002C21.2483 6.14002 20.4534 6.36002 19.6267 6.46002C20.4817 5.92002 21.1334 5.08002 21.4417 4.08002C20.6467 4.58002 19.7683 4.92002 18.8417 5.12002C18.0933 4.28002 17.0267 3.76002 15.8467 3.76002C13.1934 3.76002 11.0667 6.00002 11.6267 8.66002C8.095 8.48002 5.07 6.78002 3.03 4.20002C1.785 6.38002 2.4883 9.22002 4.7583 10.58C4.0883 10.56 3.4483 10.38 2.88 10.08C2.845 12.32 4.4917 14.4 6.7767 14.84C6.1767 15 5.5333 15.04 4.88 14.92C5.41 16.82 7.1633 18.18 9.2833 18.22C7.275 19.7 4.7367 20.44 2.25 20.12C4.39 21.44 6.9083 22.24 9.6183 22.24C15.915 22.24 19.6617 16.88 19.435 12.08C20.2417 11.48 20.9433 10.72 21.5 9.85002C20.7517 10.2 19.945 10.44 19.105 10.56C19.945 10.04 21.7267 8.28002 22 5.80002Z" fill="white"/></svg></a>
+      <a href="#" class="social-icon" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z" fill="white"/></svg></a>
+      <a href="#" class="social-icon" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z" fill="white"/></svg></a>
     </div>
     <div class="footer-copy">
       &copy; 2025 Pramuditha Radeeshan Project. All rights reserved.

@@ -1,0 +1,134 @@
+/* Additional responsive styles for Eight25 internship assessment */
+
+/* Table of Contents:
+ * 1. Large desktops and laptops
+ * 2. Desktops and small laptops
+ * 3. Tablets landscape
+ * 4. Tablets portrait
+ * 5. Mobile landscape
+ * 6. Mobile portrait
+ */
+
+/* 1. Large desktops and laptops */
+@media (min-width: 1200px) {
+  .hero-section {
+    min-height: 600px;
+  }
+  
+  .hero-text h2 {
+    font-size: 3.2rem;
+  }
+  
+  .testimonial-section {
+    height: 550px;
+  }
+  
+  .testimonial-text h3 {
+    font-size: 2.2rem;
+  }
+}
+
+/* 2. Desktops and small laptops */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .hero-section {
+    min-height: 550px;
+  }
+  
+  .logos-container {
+    height: 450px;
+  }
+}
+
+/* 3. Tablets landscape */
+@media (max-width: 991px) and (min-width: 768px) {
+  .space-section, .space-section2 {
+    height: 150px;
+  }
+  
+  .center-content {
+    max-width: 450px;
+  }
+  
+  .testimonial-content {
+    padding: 0 20px;
+  }
+}
+
+/* 4. Tablets portrait */
+@media (max-width: 767px) and (min-width: 576px) {
+  .space-section, .space-section2 {
+    height: 120px;
+  }
+  
+  .logo-card {
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+  }
+  
+  .cta-section {
+    padding: 6rem 1.5rem;
+  }
+}
+
+/* 5. Mobile landscape */
+@media (max-width: 575px) and (min-width: 481px) {
+  .space-section, .space-section2 {
+    height: 100px;
+  }
+  
+  .hero-section {
+    min-height: 450px;
+  }
+  
+  .logo-card {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+  }
+  
+  .social-icons {
+    gap: 15px;
+  }
+}
+
+/* 6. Mobile portrait */
+@media (max-width: 480px) {
+  .space-section, .space-section2 {
+    height: 80px;
+  }
+  
+  .hero-section {
+    min-height: 400px;
+    padding: 60px 15px;
+  }
+  
+  .logo-card {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+  
+  .testimonial-card {
+    padding: 15px;
+  }
+  
+  .testimonial-card img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 40px;
+  }
+  
+  .cta-section {
+    padding: 5rem 1rem;
+  }
+  
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .footer {
+    padding: 2rem 1rem;
+  }
+}

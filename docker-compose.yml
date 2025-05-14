@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  eight25-web:
+    build: .
+    container_name: eight25-container
+    ports:
+      - "3000:80"
+    volumes:
+      - .:/usr/share/nginx/html
